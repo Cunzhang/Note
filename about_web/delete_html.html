@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ <script>
+  function getXMLHTTPRequest(){  
+    if (XMLHttpRequest)    {  
+        return new XMLHttpRequest();  
+    } else {  
+        try{  
+            return new ActiveXObject('Msxml2.XMLHTTP');  
+        }catch(e){  
+            return new ActiveXObject('Microsoft.XMLHTTP');  
+        }  
+    }  
+}  
+var req = getXMLHTTPRequest();  
+req.open('DELETE','http://localhost/test.jsp',false);  
+req.send(null);  
+document.write(req.responseText);
+</script>
+
+ </body>
+</html>
